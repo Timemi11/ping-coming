@@ -1,0 +1,221 @@
+@import url("/assets/fontawesome-free-6.4.0-web/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import "color.scss";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+// MOBILE
+@media screen and (max-width:997px){
+    .container{
+        margin:0 auto;
+        max-width: 600px;
+        height: 100%;
+        width: 100%;
+        font-family: 'Libre Franklin', sans-serif;
+        padding: 2rem 0;
+        text-align: center;
+        // LOGO
+           & img:nth-of-type(1){
+            background-size: contain;
+            width: 50px;
+            height: 15px;
+        }
+        // End
+        & h1{
+            font-weight: 600;
+            color: $VeryDarkBlue;
+            padding: 2rem 0 1rem 0;
+            & span{
+                font-weight: 300;
+                color: $Gray;
+            }
+        }
+        // FORM
+        .submit-input{
+            padding: 1.5rem 0;
+            #input-submit{
+                border-radius: 1.5rem;
+                border: 0;
+                outline: 0;
+                border: 1px solid $PaleBlue;
+                padding: 1rem 1.5rem;
+                width: 70%;
+                &::placeholder{
+                    color: rgba($Gray,.5);
+                }
+            }
+            & .error-ms{
+                display: none;
+                color: $LightRed;
+                padding: .5rem 0;
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+        // END 
+        #submit{
+            cursor: pointer;
+            box-shadow: 0 5px 8px rgba(black,.2);
+            margin-bottom: 70px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            border: 0;
+            outline: 0;
+            width: 70%;
+            padding: .8rem;
+            border-radius: 2rem;
+            background-color: $Blue;
+            &:hover{
+                background-color: rgba($Blue,.8);
+            }
+        }
+        // DASHBORAD
+        & img:nth-of-type(2){
+            padding: 0 1rem ;
+            background-size: contain;
+            width: 80%;
+            height: 200px;
+            margin-bottom:120px;
+        }
+        // End
+        & footer{
+            & .icon{
+                & i{
+                    padding: 10px 12px;
+                    margin: 0 .5rem;
+                    border: 1px solid rgba($Gray,.5) ;
+                    border-radius: 2rem;
+                    &:hover{
+                        background-color: $Blue;
+                        cursor: pointer;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+            & p{
+                padding: 16px 0;
+                color: $Gray;
+            }
+        }
+    }
+}
+// END
+
+// Desktop
+@media screen and (max-width:1440px){
+    .container{
+        margin:0 auto;
+        max-width: 600px;
+        height: 100%;
+        width: 100%;
+        font-family: 'Libre Franklin', sans-serif;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+        // LOGO
+           & img:nth-of-type(1){
+            background-size: contain;
+            width: 50px;
+            height: 15px;
+        }
+        // End
+        & h1{
+            font-weight: 600;
+            color: $VeryDarkBlue;
+            padding: 2rem 0 1rem 0;
+            & span{
+                font-weight: 300;
+                color: $Gray;
+            }
+        }
+        // FORM
+        .submit-input{
+            padding: 1.5rem 0;
+            display: inline-block;
+            width: 480px;
+            position: absolute;
+            left: -10px;
+            #input-submit{
+                border-radius: 1.5rem;
+                border: 0;
+                outline: 0;
+                border: 1px solid $PaleBlue;
+                padding: 1rem 1.5rem;
+                width: 80%;
+                &::placeholder{
+                    color: rgba($Gray,.5);
+                }
+            }
+            & .error-ms{
+                font-style: italic;
+                position: relative;
+                display: none;
+                color: $LightRed;
+                left: -70px;
+                padding: .5rem 0;
+                font-size: 12px;
+            }
+        }
+        // END 
+        #submit{
+            cursor: pointer;
+            position: absolute;
+            right: -20px;
+            top:183px;
+            display: inline-block;
+            box-shadow: 0 5px 8px rgba(black,.2);
+            margin-bottom: 70px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            border: 0;
+            outline: 0;
+            width: 30%;
+            padding: .8rem;
+            border-radius: 2rem;
+            background-color: $Blue;
+            &:hover{
+                background-color: rgba($Blue,.8);
+            }
+        }
+        // DASHBORAD
+        & img:nth-of-type(2){
+            padding: 0 1rem ;
+            background-size: contain;
+            width: 80%;
+            height: 300px;
+            margin-top: 120px;
+            margin-bottom:120px;
+        }
+        // End
+        & footer{
+            & .icon{
+                & i{
+                    padding: 10px 12px;
+                    margin: 0 .5rem;
+                    border: 1px solid rgba($Gray,.5) ;
+                    border-radius: 2rem;
+                    &:hover{
+                        background-color: $Blue;
+                        cursor: pointer;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+            & p{
+                padding: 16px 0;
+                color: $Gray;
+            }
+        }
+    }
+}
+// END

@@ -1,0 +1,203 @@
+@import url("/assets/fontawesome-free-6.4.0-web/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 997px) {
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .container img:nth-of-type(1) {
+    background-size: contain;
+    width: 50px;
+    height: 15px;
+  }
+  .container h1 {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+    padding: 2rem 0 1rem 0;
+  }
+  .container h1 span {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+  }
+  .container .submit-input {
+    padding: 1.5rem 0;
+  }
+  .container .submit-input #input-submit {
+    border-radius: 1.5rem;
+    border: 0;
+    outline: 0;
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 1rem 1.5rem;
+    width: 70%;
+  }
+  .container .submit-input #input-submit::-moz-placeholder {
+    color: rgba(150, 150, 150, 0.5);
+  }
+  .container .submit-input #input-submit::placeholder {
+    color: rgba(150, 150, 150, 0.5);
+  }
+  .container .submit-input .error-ms {
+    display: none;
+    color: hsl(354, 100%, 66%);
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .container #submit {
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    width: 70%;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    background-color: hsl(223, 87%, 63%);
+  }
+  .container #submit:hover {
+    background-color: rgba(79, 125, 243, 0.8);
+  }
+  .container img:nth-of-type(2) {
+    padding: 0 1rem;
+    background-size: contain;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 120px;
+  }
+  .container footer .icon i {
+    padding: 10px 12px;
+    margin: 0 0.5rem;
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    border-radius: 2rem;
+  }
+  .container footer .icon i:hover {
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    color: #ffffff !important;
+  }
+  .container footer p {
+    padding: 16px 0;
+    color: hsl(0, 0%, 59%);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    font-family: "Libre Franklin", sans-serif;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+  }
+  .container img:nth-of-type(1) {
+    background-size: contain;
+    width: 50px;
+    height: 15px;
+  }
+  .container h1 {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+    padding: 2rem 0 1rem 0;
+  }
+  .container h1 span {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+  }
+  .container .submit-input {
+    padding: 1.5rem 0;
+    display: inline-block;
+    width: 480px;
+    position: absolute;
+    left: -10px;
+  }
+  .container .submit-input #input-submit {
+    border-radius: 1.5rem;
+    border: 0;
+    outline: 0;
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 1rem 1.5rem;
+    width: 80%;
+  }
+  .container .submit-input #input-submit::-moz-placeholder {
+    color: rgba(150, 150, 150, 0.5);
+  }
+  .container .submit-input #input-submit::placeholder {
+    color: rgba(150, 150, 150, 0.5);
+  }
+  .container .submit-input .error-ms {
+    font-style: italic;
+    position: relative;
+    display: none;
+    color: hsl(354, 100%, 66%);
+    left: -70px;
+    padding: 0.5rem 0;
+    font-size: 12px;
+  }
+  .container #submit {
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: 183px;
+    display: inline-block;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    width: 30%;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    background-color: hsl(223, 87%, 63%);
+  }
+  .container #submit:hover {
+    background-color: rgba(79, 125, 243, 0.8);
+  }
+  .container img:nth-of-type(2) {
+    padding: 0 1rem;
+    background-size: contain;
+    width: 80%;
+    height: 300px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .container footer .icon i {
+    padding: 10px 12px;
+    margin: 0 0.5rem;
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    border-radius: 2rem;
+  }
+  .container footer .icon i:hover {
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    color: #ffffff !important;
+  }
+  .container footer p {
+    padding: 16px 0;
+    color: hsl(0, 0%, 59%);
+  }
+}/*# sourceMappingURL=main.css.map */
